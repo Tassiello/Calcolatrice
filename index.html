@@ -198,6 +198,8 @@
                 case "div":
                     if (isNaN(num1) || isNaN(num2)) {
                         showAlert("Devi inserire due numeri!");
+                    } else if (num2 === 0) {
+                        showAlert("Impossibile dividere per zero!");
                     } else {
                         risultato.innerHTML = "Il risultato è: " + (num1 / num2);
                     }
